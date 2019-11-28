@@ -2,9 +2,9 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Report</title>
+<title>Navigation - Copy-Copy1</title>
 
-<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=MKLMuAUgoHzJO7VlhsXHobR0jjXhi9rJvgtMhUCR0qoDGKSIietvrvJgCnLOabIXPEgK6Gh9e_3PdzvRwL2weklDmvyev0mJ_U80AHReAbSONqPvdl0POtw4AmGr2v1d" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL2xvY2FsaG9zdDo4ODg4L25iY29udmVydC9odG1sL1JlcG9ydC5pcHluYj9kb3dubG9hZD10cnVl"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=N-6dEOiE0liUFHCnHbo0VGcugi-vrqRN8cJwWtytMEx-DkoBX--iTC1-f11bMjIeu6-ptPdRCbIebDuYnO52yp1WOcxYpdf3U_78W8Pf7Xo3LBCiqr8aQus_la_shlmt8_kaM25kx8lH1RolzzlpJU4pr7VnuaLAEq8MtJINV-OIKes0g_c_E2wrh_tiUIFU" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL2xvY2FsaG9zdDo4ODg4L25iY29udmVydC9odG1sL05hdmlnYXRpb24lMjBwcm9qZWN0JTIwRFJMTkQvTmF2aWdhdGlvbiUyMC0lMjBDb3B5LUNvcHkxLmlweW5iP2Rvd25sb2FkPXRydWU"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
@@ -13383,47 +13383,6 @@ States have length: 37
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-Architecture">Model Architecture<a class="anchor-link" href="#Model-Architecture">&#182;</a></h2><p>The Neural Network architecute will consists of 3 layers and is definded under QNetwork class in <code>model.py</code> file.</p>
-<ul>
-<li>layer 1 (input layer):
-<pre><code>  This take an input is equal to state_size of the environment and output the hidden state.</code></pre>
-</li>
-<li>layer 2 (hidden layer):
-<pre><code>  This will take the output from the input layer and generates input to the output layer</code></pre>
-</li>
-<li>layer 3 (output layer):
-<pre><code>  This takes the output of hidden layer and generates the output of size equal to action_size</code></pre>
-</li>
-</ul>
-<h2 id="Hyperparameters">Hyperparameters<a class="anchor-link" href="#Hyperparameters">&#182;</a></h2><p>We used the size of hidden layer as 64</p>
-<p>various  hyperparameters used while training the Deep Q Network agent are</p>
-<ul>
-<li>number of episodes(n_episodes) = 2000 which is the maximum number of training episodes</li>
-<li>Maximum timesteps (max_t) = 1000 is the maximum number of timesteps per episode till when the episode to be continued if it not reached done state.</li>
-<li>epsilon value (eps_start) = 1.0  is the value of epsilon that defines the epsilon greedy policy.</li>
-<li>epsilon decay (eps_decay) = 0.94 which defines the decrementing factor of the epsilon at every timestep.</li>
-<li>epsilon minimum (eps_end) = 0.1 it the minimum value of epsilon that should not be crossed during the decay process.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -13658,27 +13617,6 @@ Environment solved in 317 episodes!	Average Score: 13.05
 
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ideas-for-Future-Work">Ideas for Future Work<a class="anchor-link" href="#Ideas-for-Future-Work">&#182;</a></h2><p>I want to improveme the performance of the agent by using dueling DQN and prioritized experience replay to make it more efficient</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
